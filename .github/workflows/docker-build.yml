@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Docker Image
-        run: docker build -t ghcr.io/${{ github.repository }}/flask-app:latest .
+        run: docker build -t ghcr.io/${{ github.repository | toLower }}/flask-app:latest .
 
       - name: Push Docker Image
         run: docker push ghcr.io/${{ github.repository }}/flask-app:latest
