@@ -25,4 +25,3 @@ jobs:
 
       - name: Push Docker Image
         run: docker push ghcr.io/leonardo190319/flask-ex/flask-app:latest
-
