@@ -20,4 +20,3 @@ jobs:
         run: |
           docker build -t ghcr.io/leonardo190319/flask-ex/flask-app:latest .
           docker push ghcr.io/leonardo190319/flask-ex/flask-app:latest
-#
